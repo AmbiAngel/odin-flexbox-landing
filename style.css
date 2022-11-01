@@ -25,7 +25,7 @@ h1 {
   text-decoration: none;
   color: var(--light-text-color);
   text-emphasis: bold;
-  padding-left: 2rem;
+  padding-left: 2%;
   font-weight: bold;
 }
 .header a:hover {
@@ -54,7 +54,7 @@ h1 {
 }
 .home-section div {
   flex-basis: 49%;
-  padding: 2rem;
+  padding: 2%;
 }
 
 /* info section */
@@ -66,29 +66,40 @@ h1 {
 }
 .info-section h1 {
   padding-bottom: 3rem;
+  text-align: center;
 }
 
 .info-section ul {
   list-style: none;
   display: flex;
   gap: 2rem;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0;
 }
 
 .info-section ul li {
-  width: 10rem;
+  flex-basis: 40%;
 }
 .info-section ul li div {
   border: blue 1px solid;
   border-radius: 10%;
   height: 10rem;
   width: 10rem;
+  margin: 0 auto;
+}
+
+.info-section ul li p{
+  text-align: center;
 }
 
 /* reviews section */
 
 .reviews-section {
   background-color: #e5e7eb;
+  padding: 10rem 15%;
 }
+
 
 /* CTA */
 
@@ -141,4 +152,9 @@ h1 {
 }
 
 footer p {
+}
+
+
+@media(max-width:1110px){
+
 }
